@@ -1,25 +1,33 @@
 import FilmItem from "./film-item.js";
-// import films from "./films,js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-// const [films, setFilms] =useState(
-  const films= [
-      { title: "Everything Everywhere All At Once", director: "Daniel Scheinert"},
-      { title: "Everything Ence", director: "Dan nert"},
-      { title: "Everything Everywher Once", director: "Danne tert"},
-    ];
+// const films= [
+  //     { title: "Everything Everywhere All At Once", director: "Daniel Scheinert"},
+  //     { title: "Everything Ence", director: "Dan nert"},
+  //     { title: "Everything Everywher Once", director: "Danne tert"},
+  //   ];
 
 export default function FilmGrid(){
+  const [films, setFilms] = useState([]);
+  
+  useEffect(()=>{
+    getFilms();
+  }, []);
+
+      const getFilms = async() => {
+      const response = await fetch(`/api/films`)
+      const data = await response.json();
+      console.log(data);
+      setFilms(data);
+    }
+
   return(
-      <div id="film-grid" className="w-full px-20 pt-20 grid grid-cols-3 bg-black text-white ">
+      <div className="w-full px-20 pt-20 grid grid-cols-3 bg-black text-white ">
           {films.map((film) => {
-            console.log(films);
-            return (
-            <FilmItem 
-                title={film.title}
-                director={film.director}
-              />);
-        })}   
+            return(
+              <FilmItem film={film}/>
+            )
+          })}
       </div>
   )
 }

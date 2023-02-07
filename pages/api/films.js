@@ -1,5 +1,10 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 export default function handler(req, res) {
-  res.status(200).json({ title: "Everything Everywhere All At Once", director: "Daniel Kwan & Daniel Scheinert", release: 2022})
+  const films=[
+    { title: "Everything Everywhere All At Once", director: "Daniel Scheinert"},
+    { title: "Precious", director: "NAyone"},
+    { title: "LOTR", director: "Peter Jackson"}
+];
+  res.json(films);
 }

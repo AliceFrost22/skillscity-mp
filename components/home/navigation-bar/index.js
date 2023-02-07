@@ -10,9 +10,9 @@ export default function NavigationBar({}){
             </div>
                 <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                     <div className="text-lg lg:flex-grow">
-                 <a href="" className="font-bold hover:scale-125 block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+                             <a href="../pages/film-page.js" className="font-bold hover:scale-125 block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
                 Top Movies
-            </a>
+                             </a>
             <a href="" className="text-lg font-bold hover:scale-125 block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
                 Reviews
             </a>
