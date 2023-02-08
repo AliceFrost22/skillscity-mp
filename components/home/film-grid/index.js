@@ -22,10 +22,10 @@ export default function FilmGrid(){
     }
 
   return(
-      <div className="w-full px-20 pt-20 grid grid-cols-3 bg-black text-white ">
-          {films.map((film) => {
+      <div className="w-full px-20 pt-20 grid grid-cols-3 bg-black text-white gap-5">
+          {films.map((film, index) => {
             return(
-              <FilmItem film={film}/>
+              <FilmItem key={index} film={film}/>
             )
           })}
       </div>
