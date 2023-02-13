@@ -1,5 +1,5 @@
 import SearchPage from "./search-bar";
-import FilmPage from "@/pages/film-page";
+import FilmPage from "@/pages/single-film-page";
 import Link from "next/link";
 
 export default function NavigationBar({}){

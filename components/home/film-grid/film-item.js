@@ -5,16 +5,20 @@ import CopyToClipboard from "react-copy-to-clipboard";
 export default function FilmItem({ film }){
   const [likes, setLikes] =useState(0);
 
-  const handleLike =()=>{
+  const handleLike = async()=>{
     let newLikes =likes +1;
+    const id =film.id;
+    const response= await fetch(`/api/increment-likes?id=${id}&likes=${newLikes}`);
+    const data = await response.json();
+
     setLikes(newLikes);
   }
 
   return(
     <div id="film1" >
       <div className="bg-amber-400 gap-5 ml-20 border border-black rounded-lg">
-      <p className="mb-5 p-10 flex justify-center rounded-lg" >
-        <img src={film.imgUrl}/>
+      <p className="p-10 flex justify-center rounded-lg" >
+        <img src={film.img_url}/>
         </p>
       </div>
         <div className="bg-amber-400 text-center gap-5 ml-20 mt-5 border border-black ">

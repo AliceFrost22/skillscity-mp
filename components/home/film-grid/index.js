@@ -1,11 +1,6 @@
 import FilmItem from "./film-item.js";
 import { useEffect, useState } from "react";
 
-// const films= [
-  //     { title: "Everything Everywhere All At Once", director: "Daniel Scheinert"},
-  //     { title: "Everything Ence", director: "Dan nert"},
-  //     { title: "Everything Everywher Once", director: "Danne tert"},
-  //   ];
 
 export default function FilmGrid(){
   const [films, setFilms] = useState([]);

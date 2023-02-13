@@ -3,8 +3,8 @@ import topics from "./topics";
 export default function Topics() {
     return(
         <div className="w-full flex flex-col">
-            <div className="w-full flex flex-col text-white">
-                <h3 className="font-medium text-2xl text-white">
+            <div className="w-full flex flex-col text-black">
+                <h3 className="font-medium text-2xl text-black">
                  Topics covered in this course
                 </h3>
                 <div>

@@ -1,23 +1,21 @@
-import NavigationBar from "@/components/home/navigation-bar";
-import Topics from "@/components/home/topics";
-import Content from "../components/shared/content";
-import CopyToClipboard from "react-copy-to-clipboard";
+import NavigationBar from "../components/home/navigation-bar";
+import Hero from "../components/home/header/film-hero";
+import FilmGrid from "../components/home/film-grid";
 
 
-export default function FilmPage(film, linkToPurchase){
-    return (
-        <div className="bg-black">
-            <NavigationBar></NavigationBar>
-            <Content>
-                <Topics></Topics>
-                <CopyToClipboard text={film.linkToPurchase}>
-                <button
-                className="bg-red-900 px-4 rounded-lg"
-                type="button" >
-                Copy Link to Amazon
-                </button>
-                </CopyToClipboard>
-            </Content>
-        </div>
-    )
+export function FilmPage() {
+
+  return (
+  <div>
+
+    <NavigationBar></NavigationBar>
+
+    <Hero></Hero>
+    <FilmGrid></FilmGrid>
+
+
+  </div>
+  )
 }
+
+export default FilmPage

@@ -38,7 +38,7 @@ export default function SingleFilm(){
             <Header name={film.title}></Header>
 
             <Hero
-            imgUrl={film.imgUrl}
+            img_url={film.img_url}
             title={film.title}
             director={film.director} />
 
