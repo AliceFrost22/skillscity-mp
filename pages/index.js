@@ -12,7 +12,10 @@ export function Home() {
   <div>
        <NavigationBar></NavigationBar>
        <Content>
-        <Banner></Banner>
+        <Banner >            
+          {/* <div class="bg-repeat-x" img src="https://images.pexels.com/photos/413195/pexels-photo-413195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        </div> */}
+        </Banner>
         <Topics></Topics>
 
         </Content>

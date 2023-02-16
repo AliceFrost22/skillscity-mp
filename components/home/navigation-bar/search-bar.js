@@ -2,8 +2,8 @@ import React from "react";
 
 const SearchPage = () => {
   return (
-    <form className="flex justify-end form-inline mt-4 mb-4 max-w-2xl mx-auto">
-         <input className="form-control form-control-sm ml-3 w-75 rounded-md" type="text" placeholder="Search" aria-label="Search" />
+    <form className="w-full flex items-center md:justify-end md:pr-10 md:form-inline mt-4 mb-4 w-100">
+         <input className="form-control form-control-sm ml-3 rounded-md" type="text" placeholder="Search" aria-label="Search" />
       </form>
   );
 }

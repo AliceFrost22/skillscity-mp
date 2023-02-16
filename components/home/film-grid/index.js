@@ -17,7 +17,7 @@ export default function FilmGrid(){
     }
 
   return(
-      <div className="w-full px-20 pt-20 grid grid-cols-3 bg-black text-white gap-5">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 bg-black text-white gap-5">
           {films.map((film, index) => {
             return(
               <FilmItem key={index} film={film}/>
