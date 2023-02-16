@@ -1,4 +1,5 @@
 import Input from "@/components/home/input";
+import NavigationBar from "@/components/home/navigation-bar";
 import LocationItem from "@/components/search/location-item";
 import Content from "@/components/shared/content";
 import Footer from "@/components/shared/footer";
@@ -45,6 +46,7 @@ export default function Search() {
 
     return (
         <div className="w-full">
+            <NavigationBar></NavigationBar>
             <Header name="Search" />
 
             <Content>
@@ -58,7 +60,7 @@ export default function Search() {
                         type="button"
                         onClick={filteredLocations}
                     >
-                        S
+                        Search
                     </button>
                 </div>
 
