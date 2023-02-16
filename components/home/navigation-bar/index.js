@@ -4,12 +4,12 @@ import Link from "next/link";
 
 export default function NavigationBar({}){
     return (
-     <div id='navigation' className="w-full">
+     <div id='navigation' className="w-full flex flex-col-4">
         <nav className="w-full bg-black m-0">
             <div >
-                 <a href="/"><img src="/assets/alice logo.svg" className="flex justify-items-start h-24"/></a>
+                 <a href="/"><img src="/assets/alice logo.svg" className="flex justify-items-start h-24 "/></a>
             </div>
-                <div className="w-full flex flex-col-3 hover:flex-grow">
+                <div className="w-full  hover:flex-grow">
                     <div className="text-lg lg:flex-grow">
                         <a href='/library' className="font-bold hover:scale-125 block mt-4 inline-block lg:mt-0 text-white hover:text-white mr-4">
                 Film Library
@@ -17,7 +17,7 @@ export default function NavigationBar({}){
             <a href="/film-page" className="text-ml font-bold hover:scale-125 block mt-4 inline-block lg:mt-0 text-white hover:text-white mr-4">
                 Reviews
             </a>
-            <a href="/contact." className="text-lg font-bold hover:scale-125 block mt-4 inline-block lg:mt-0 text-white hover:text-white">
+            <a href="/contact" className="text-lg font-bold hover:scale-125 block mt-4 inline-block lg:mt-0 text-white hover:text-white">
                 Contact
             </a>
              </div>
