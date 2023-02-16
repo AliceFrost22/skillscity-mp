@@ -14,12 +14,29 @@ export default function Contact() {
         const message = event.target.value;
         setMessage(message);
     }
+    // FETCH REQUEST
+    // const handleSubmit = async (event) => {
+    //     const response = await fetch(`/api/contact?name=${name}&email=${email}&message=${message}`);
+    //     const data = await response.json();
+
     const handleSubmit = async (event) => {
-        const response = await fetch(`/api/contact?name=${name}&email=${email}&message=${message}`);
-        const data = await response.json();
+
+    let payload = {
+        name:name,
+        email:email,
+        message:message
+    };
+
+    const response =await fetch(`/api/contact`,{
+        method: "POST",                                                                                         
+        headers: {
+            "Content-Type":"application/json"
+        },
+        body: JSON.stringify(payload)
+    })
 
         setName("");
-        setEmail("");
+        setEmail("");    
         setMessage("");
         setShowSuccess(true);
     }

@@ -12,6 +12,7 @@ export default function SingleFilm(){
     useEffect(()=> {
         //if filmId is null
         if (!filmId) return; 
+        
        getFilms(filmId);    
     },[filmId]);
 

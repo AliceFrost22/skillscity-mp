@@ -20,6 +20,9 @@ export default function NavigationBar({}){
             <a href="/contact" className="text-lg font-bold hover:scale-125 block mt-4 inline-block lg:mt-0 text-white hover:text-white">
                 Contact
             </a>
+            <a href="/search" className="text-lg font-bold hover:scale-125 block mt-4 inline-block lg:mt-0 text-white hover:text-white">
+                Search
+            </a>
              </div>
         </div>
         <div className="w-full pb-1">
