@@ -1,6 +1,6 @@
-
-import { useLikes } from "@/context/likes";
+import { useLikes } from "@/components/context/likes";
 import NumberOfLikes from "./number-of-likes";
+
 
 export default function LikeButton() {
     const { handleLike } = useLikes();

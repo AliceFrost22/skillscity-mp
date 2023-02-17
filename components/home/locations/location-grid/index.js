@@ -1,6 +1,7 @@
-import LocationItem from "./location-item";
+import LikesProvider from "@/components/context/likes";
 import { useEffect, useState } from "react";
-import LikesProvider from "@/context/likes";
+import LocationItem from "./location-item";
+
 
 export default function LocationsGrid() {
     const [locations, setLocations] = useState([]);

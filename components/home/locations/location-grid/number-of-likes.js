@@ -1,4 +1,5 @@
-import { useLikes } from "@/context/likes"
+import { useLikes } from "@/components/context/likes";
+
 
 export default function NumberOfLikes() {
     const { likes } = useLikes();

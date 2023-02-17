@@ -19,7 +19,7 @@ export function Home() {
         <Bio></Bio>
         
         <Topics></Topics>
-
+      <NavigationBar></NavigationBar>
 
   </div>
   )
