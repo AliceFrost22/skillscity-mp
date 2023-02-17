@@ -1,4 +1,7 @@
-/** @type {import('tailwindcss').Config} */
+{import('tailwindcss').Config}
+
+{import('https://fonts.googleapis.com/css2?family=Righteous&display=swap')};
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -9,7 +12,8 @@ module.exports = {
     extend: {
       fontFamily: {
         amatica: ["Amatic SC", "cursive"],
-        inter: ["Inter", "sans-serif"]
+        inter: ["Inter", "sans-serif"],
+        header:["Righteous","cursive"]
       }
     },
   },

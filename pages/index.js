@@ -3,6 +3,9 @@ import Topics from "@/components/home/topics";
 import Banner from "@/components/home/header/banner";
 import BackgroundImage from "@/components/home/header/banner";
 import Content from "@/components/shared/content";
+import MainNav from "@/components/home/navigation-bar/nav-bar-home";
+import Header from "@/components/shared/header";
+import Bio from "@/components/home/content";
 
 // import checkMobileScreen from "../components/home/functions";
 
@@ -10,15 +13,14 @@ export function Home() {
 
   return (
   <div>
-       <NavigationBar></NavigationBar>
-       <Content>
-        <Banner >            
-          {/* <div class="bg-repeat-x" img src="https://images.pexels.com/photos/413195/pexels-photo-413195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-        </div> */}
-        </Banner>
+       <MainNav></MainNav>
+
+        <Header/>            
+        <Bio></Bio>
+        
         <Topics></Topics>
 
-        </Content>
+
   </div>
   )
 }
