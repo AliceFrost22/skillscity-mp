@@ -2,7 +2,7 @@
 export default function Bio({}){
     return(
         <div className="w-full">
-            <div className="m-4 py-3 px-2 bg-gray-200 rounded text-center font-header text-lg">
+            <div className="m-4 py-3 px-2 bg-orange-400 rounded text-center font-header text-lg">
                 <h2>PROFILE</h2>
                 <p className="text-center font-sans text-base"> 
                 A dedicated professional who is focused and highly motivated with a passion to develop and apply new knowledge. In both my work and home life I love taking an idea or need and through thorough research and development getting to the final outcome. 
