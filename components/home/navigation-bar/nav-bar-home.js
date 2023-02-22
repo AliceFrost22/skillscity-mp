@@ -3,14 +3,23 @@ import BurgerIcon from "./burger";
 
 export default function MainNav(){
     return(
-        <div id="logo" className="w-full grid grid-cols-2">
-            <div className="relative w-24 m-3 rounded-md">
-                <a href="/"><img src="/assets/alice-logo-2.png"/></a>
-            </div>
-            <div className="grid justify-right">
-                <BurgerIcon color="black" className="w-6 h-6"/>
+        <div id="MainNav" className="w-full">
+            <div className="flex grid-cols-4 gap-2 text-end mt-8">
+                <a href="/" className="text-end text-ml font-sans hover:scale-125 block mt-4 inline-block lg:mt-0 text-black hover:text-purple-100 mr-4">
+                   Home
+                </a>
+                <a href="/film-page" className="text-end text-ml font-sans hover:scale-125 block mt-4 inline-block lg:mt-0 text-black hover:text-purple-100 mr-4">
+                   Library
+                </a>
+                <a href="/locations" className="text-end text-ml font-sans hover:scale-125 block mt-4 inline-block lg:mt-0 text-black hover:text-purple-100 mr-4">
+                   Locations
+                </a>
+                <a href="/search" className="text-end text-ml font-sans hover:scale-125 block mt-4 inline-block lg:mt-0 text-black hover:text-purple-100 mr-4">
+                   Search
+                </a>
             </div>
         </div>
+
     )
 }
 

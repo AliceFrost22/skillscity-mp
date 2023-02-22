@@ -7,9 +7,9 @@ export default function Library() {
   return (
     <div>
   
-      <NavigationBar></NavigationBar>
+      <MainNav></MainNav>
   
-      <Hero></Hero>
+      <Hero>Library</Hero>
       <FilmGrid></FilmGrid>
   
   

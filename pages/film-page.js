@@ -8,7 +8,7 @@ export function FilmPage() {
   return (
   <div>
 
-    <NavigationBar></NavigationBar>
+    <MainNav></MainNav>
 
     <Hero></Hero>
     <FilmGrid></FilmGrid>

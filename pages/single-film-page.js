@@ -7,7 +7,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 export default function FilmPage(film, linkToPurchase){
     return (
         <div className="bg-black">
-            <NavigationBar></NavigationBar>
+            <MainNav></MainNav>
             <Content>
                 <Topics></Topics>
                 <CopyToClipboard text={film.linkToPurchase}>
