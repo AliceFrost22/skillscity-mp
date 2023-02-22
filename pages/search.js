@@ -5,6 +5,7 @@ import Content from "@/components/shared/content";
 import Footer from "@/components/shared/footer";
 import Header from "@/components/shared/header";
 import { useEffect, useState } from "react";
+import MainNav from "@/components/home/navigation-bar/nav-bar-home";
 
 export default function Search() {
     const [locations, setLocations] = useState([]);
@@ -46,7 +47,7 @@ export default function Search() {
 
     return (
         <div className="w-full">
-            <NavigationBar></NavigationBar>
+            <MainNav></MainNav>
             <Header name="Search" />
 
             <Content>

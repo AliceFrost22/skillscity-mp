@@ -21,7 +21,7 @@ export default function FilmItem({ film }){
         <img src={film.img_url}/>
         </p>
       </div>
-        <div className="bg-amber-400 md:gap-5 border border-black rounded-lg">
+        <div className="bg-amber-400 md:gap-5 rounded-lg">
          <p className="p-4 m-2 mb-2 md:p10 flex justify-center rounded-lg text-xl" >
             {film.title}
           </p>
@@ -36,7 +36,7 @@ export default function FilmItem({ film }){
             <button
               className="bg-red-900 px-4 rounded-lg text-center"
               type="button" >
-                Copy Link to Amazon
+                Where to watch
             </button>
           </CopyToClipboard>
       </div>

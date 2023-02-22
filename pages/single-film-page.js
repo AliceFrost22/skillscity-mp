@@ -2,7 +2,7 @@ import NavigationBar from "@/components/home/navigation-bar";
 import Topics from "@/components/home/topics";
 import Content from "../components/shared/content";
 import CopyToClipboard from "react-copy-to-clipboard";
-
+import MainNav from "@/components/home/navigation-bar/nav-bar-home";
 
 export default function FilmPage(film, linkToPurchase){
     return (

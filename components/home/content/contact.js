@@ -1,8 +1,8 @@
-import Banner from "@/components/home/header/banner";
 import Content from "@/components/shared/content";
 import { useState } from "react";
 import Input from "@/components/home/input";
 import NavigationBar from "@/components/home/navigation-bar";
+import MainNav from "@/components/home/navigation-bar/nav-bar-home";
 
 export default function Contact() {
     const [name, setName] = useState("");
@@ -42,11 +42,10 @@ export default function Contact() {
     }
 
     return (
-        <div className="w-full">
-            <NavigationBar />
-
-            <Content>
-                <form className="flex flex-col space-y-3">
+        <div className="w-full ">
+               <Content>
+                <h className="font-bold p-2">If you wish to get in touch please leave your details and a message below</h>
+                <form className="flex flex-col space-y-3 p-2">
                     <Input
                         placeholder="Name"
                         value={name}
