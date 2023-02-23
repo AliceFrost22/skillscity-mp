@@ -10,7 +10,7 @@ export default function Library() {
   
       <NavigationBar></NavigationBar>
   
-      <Hero>Library</Hero>
+      <Hero></Hero>
       <FilmGrid></FilmGrid>
   
   

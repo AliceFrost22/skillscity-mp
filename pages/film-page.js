@@ -11,7 +11,7 @@ export function FilmPage() {
 
     <NavigationBar></NavigationBar>
 
-    <Hero>Library</Hero>
+    <Hero></Hero>
     <FilmGrid></FilmGrid>
 
 

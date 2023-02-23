@@ -48,8 +48,7 @@ export default function Search() {
     return (
         <div className="w-full">
             <MainNav></MainNav>
-            <Header name="Search" />
-
+            <h1 className="mx-auto text-5xl text-center mb-5 font-header flex justify-items-center"> Search</h1>
             <Content>
                 <div className="w-full md:w-6/12 lg:w-4/12 flex flex-row space-x-2">
                     <Input

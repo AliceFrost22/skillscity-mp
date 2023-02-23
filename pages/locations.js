@@ -8,7 +8,8 @@ export default function LocationsPage() {
     return (
         <div>
             <MainNav></MainNav>
-            <Hero>Locations</Hero>
+            <Hero></Hero>
+            <h1 className="text-5xl text-center mb-5 font-header"> Locations</h1>
             <Content>
                 <div className="w-full max-w-6xl mx-auto mt-8">
                     <LocationsGrid/>

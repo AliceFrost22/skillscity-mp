@@ -44,8 +44,8 @@ export default function Contact() {
     return (
         <div className="w-full ">
                <Content>
-                <h className="font-bold p-2">If you wish to get in touch please leave your details and a message below</h>
-                <form className="flex flex-col space-y-3 p-2">
+                <h className="w-full flex font-bold m-2 p-3">If you wish to get in touch please leave your details and a message below </h>
+                <form className="flex flex-col space-y-3 m-2 px-2 mr-5 justify-items-center">
                     <Input
                         placeholder="Name"
                         value={name}

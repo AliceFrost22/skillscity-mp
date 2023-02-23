@@ -22,10 +22,10 @@ export default function FilmItem({ film }){
         </p>
       </div>
         <div className="bg-amber-400 md:gap-5 rounded-lg">
-         <p className="p-4 m-2 mb-2 md:p10 flex justify-center rounded-lg text-xl" >
+         <p className="font-medium text-xl pl-2 ml-2 text-center" >
             {film.title}
           </p>
-          <p className="font-medium" >
+          <p className="font-medium pl-2 ml-2 text-center" >
             {film.director}
           </p>
         <button onClick={(handleLike)}
